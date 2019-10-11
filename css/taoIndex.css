@@ -1,0 +1,30 @@
+.logo::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url(data:image/淘宝.png);
+    background-size: 100% 100%;
+}
+
+.navbar {
+    min-height: 0px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #000;
+}
+
+.bars2 {
+    background-color: darkorange;
+    height:25px; 
+    text-align: center;
+}
+
+.bars2>a{
+    line-height: 25px;
+    color: #fff;
+    padding: 0px 30px;
+}
