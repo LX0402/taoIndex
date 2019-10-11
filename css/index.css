@@ -1,237 +1,30 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    
+.logo::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url(data:image/淘宝.png);
+    background-size: 100% 100%;
 }
 
-.navbar{
+.navbar {
     min-height: 0px;
-    background-color: #f5f5f5;
-}
-
-.content{
-    margin: 0 auto;
-    width: 1000px;
 }
 
 .navbar-nav>li>a {
-    padding: 7px 6px;
-    font-size: 12px;
-    color: rgb(102, 101, 101);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #000;
 }
 
-.world{
-    color: #000 !important;
-}
-
-#hamburger,#shopping-cart,.active>a{
-    color: #f22e00 !important;
-}
-
-/*.text,#search,input{
-    background-color: #fff;
-}*/
-
-#search{
-    margin: 20px auto;
-    width: 1000px;
-}
-
-.photo{
-    display: inline-block;
-    text-decoration: none;
-    color: #f22e00;
-    margin: 5px 60px;
-    width: 130px;
-    height: 50px;
-    text-indent: 200px;
-    overflow: hidden;
-    white-space: nowrap;
-    background-image: url(https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png);
-    background-size: 130px 50px;
-    vertical-align: -20px;
-}
-
-.control{
-    border: 2px solid #ff5000;
-    border-radius: 18px;
-    margin: 0px;
-    width: 450px;
-    height: 35px;
-}
-
-.form-group{
-    background-color: #ff5000;
-    width: 500px;
-    border-radius: 18px;
-    height: 35px;
-}
-
-
-.btn{
-    padding: 0px;
-    height: 34px;
-    line-height: 34px;
+.bars2 {
+    background-color: darkorange;
+    height:25px; 
     text-align: center;
-    background-color: #ff5000;
-    color: #fff;
-    font-size: 16px;
 }
 
-.bars{
-    background-image: linear-gradient(to right,#ff9000 0,#ff5000 100%);
-    text-align: center;
-    height: 25px;
-}
-
-.bars-content>a,.theme1{
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 12px;
+.bars2>a{
     line-height: 25px;
-}
-
-.bars-content>.theme2{
-    margin: 0px;
-    padding: 5px 56px;
-    text-align: center;
-    background-color: rgb(255, 80, 0);
-}
-
-.main-inner{
-    margin: 0 auto;
-    width: 1066px;
-}
-
-.main-left{
-    width: 805px;
-    display: inline-block;
-}
-
-.service-left{
-    width: 165px;
-    height: 515px;
-    margin-right: 5px;
-    border: 1px solid #ff5000;
-    float: left;
-}
-
-.service-left>ul{
-    margin: 15px 15px;
-    height: 16px;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.service-left>ul>li{
-    list-style: none;
-    line-height: 17px;
-    margin: 0px 1px;
-    float: left;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.service-left>ul>li>a,span,#chevron{
-    font-size: 12px;
-    color: #666;
-}
-
-.service-center{
-    display: inline-block;
-    width: 630px;
-    height: 510px;
-    margin: 5px 0px 5px 5px;
-}
-
-.content-left{
-    float: left;
-    width: 490px;
-    height: 510px;
-}
-
-.content-left-top{
-    height: 255px;
-    width: 490px;
-}
-
-.carousel-indicators{
-    bottom:10px;
-    height: 8px;
-}
-
-.carousel-indicators li {
-    width: 8px;
-    height: 8px;
-    background-color: #fff;
-    margin: 0px;
-}
-
-.content-left-top>.item>img{
-    height: 255px;
-    width: 490px;
-}
-
-.carousel-indicators .active{
-    width: 8px;
-    height: 8px;
-    background-color: #ff5000;
-    border: 1px solid #ff5000;
-}
-
-.content-left-bottom{
-    height: 255px;
-    width: 490px;
-}
-
-.mall-top{
-    border: 1px solid #ff5000;
-    height: 18px;
-    width: 490px;
-    margin: 11px 0 0 0;
-}
-
-.mall-bottom{
-    height: 226px;
-    width: 490px;
-}
-
-.mall-bottom>img{
-    height: 226px;
-    width: 490px;
-}
-
-.content-right{
-    float: right;
-    width: 129px;
-    height: 510px;
-    margin-left: 5px;
-}
-
-.content-right>img{
-    width: 129px;
-    height: 510px;
-}
-
-.main-right{
-    float: right;
-    width: 250px;
-    height: 636px;
-    border: 1px solid #ff5000;
-}
-
-.main-right>img{
-    width: 248px;
-    height: 540px;
-}
-
-.service-bottom{
-    border: 1px solid #ff5000;
-    height: 110px;
-}
-
-.service-bottom>img{
-    height: 98px;
-    width: 802px;
+    color: #fff;
+    padding: 0px 30px;
 }

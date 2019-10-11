@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>淘宝网 - 淘！我喜欢</title>
+        <title>淘宝网—淘！剁手</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/taoIndex.css">
     </head>
     <body>
-        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-        </script>
-
-        <div class="navbar">
-            <div class="content">
+        <div class="navbar" style="background-color:#f5f5f5;">
+            <div class="container-fluid">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                     <a href="#" class="world" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">中国大陆 <span class="caret"></span></a>
@@ -49,7 +45,7 @@
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span id="shopping-cart" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 购物车 <span class="caret"></span>
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 购物车 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Action</a></li>
@@ -91,7 +87,7 @@
                         </li>
                         <li class="dropdown">
                             <a href="#" class="site-navigation"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span id="hamburger" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>网站导航</a>
+                                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>网站导航</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
@@ -104,221 +100,69 @@
                 </div>
             </div>
         </div>
-
-        <div class="text">
-            <form id="search" class="navbar-form navbar-center" role="search">
-                <a class="photo" href="https://www.taobao.com" >淘宝网</a>
+        <div class="text-center">
+            <form class="navbar-form navbar-center" role="search">
+                <a class="" href="#" ><img src="image/taobao.jpg" alt="taobao"></a>
                 <div class="form-group">
-                    <input type="text" class="control">
-                    <button type="submit" class="btn">搜索</button>
+                    <input type="text" id="content1" class="form-control" style="width: 300px; height: 35px;">
                 </div>
+                <button type="submit" class="btn btn-default" style="height: 35px">搜索</button>
             </form>
-        </div>
 
-        <div class="bars">
-            <div class="bars-content">
-                <span class="theme1 theme2">主题市场</span>
-                <a href="#" class="theme">天猫</a>
-                <a href="#" class="theme">聚划算</a>
-                <a href="#" class="theme">天猫超市</a>
-                <span class="theme1">|</span>
-                <a href="#" class="theme">淘抢购</a>
-                <a href="#" class="theme">电器城</a>
-                <a href="#" class="theme">司法拍卖</a>
-                <a href="#" class="theme">淘宝心选</a>
-                <a href="#" class="theme">兴农扶贫</a>
-                <span class="theme1">|</span>
-                <a href="#" class="theme">飞猪旅行</a>
-                <a href="#" class="theme">智能生活</a>
-                <a href="#" class="theme">苏宁易购</a>
-                <a href="#" class="theme">黑科技</a>
-            </div>
-        </div>
-
-        <div class="main">
-            <div class="main-inner">
-                <div class="main-left">
-                    <div class="service-left">
-                        <ul>
-                            <li><a href="#">女装</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">男装</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">内衣</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">鞋靴</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">箱包</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">配件</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">童装玩具</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">孕产</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">用品</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">家电</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">数码</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">手机</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">美妆</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">洗护</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">保健品</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">珠宝</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">眼镜</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">手表</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">运动</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">户外</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">乐器</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">游戏</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">动漫</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">影视</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">美食</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">生鲜</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">零食</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">鲜花</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">宠物</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">农贸</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">工具</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">装修</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">建材</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">家具</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">家饰</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">家纺</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">汽车</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">二手车</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">用品</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">办公</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">DIY</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">五金电子</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">百货</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">餐厨</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">家庭保健</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">学习</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">卡券</a></li>
-                            <li><span>/</span></li>
-                            <li><a href="#">本地服务</a></li>
-                            <li><span id="chevron" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></li>
-                        </ul>
-                    </div>
-
-                    <div class="service-center">
-                        <div class="content-left">
-                            <div class="content-left-top">
-                                <div id="myCarousel" class="carousel slide">
-                                    <!-- 轮播（Carousel）指标 -->
-                                    <ul class="carousel-indicators">
-                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                                    </ul>   
-                                    <!-- 轮播（Carousel）项目 -->
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img src="https://img.alicdn.com/tfs/TB1R02ZiXP7gK0jSZFjXXc5aXXa-520-280.jpg_q90_.webp" alt="First slide">
-                                        </div>
-                                        <div class="item">
-                                            <img src="https://img.alicdn.com/simba/img/TB1N7GwhKH2gK0jSZFESuwqMpXa.jpg" alt="Second slide">
-                                        </div>
-                                        <div class="item">
-                                            <img src="https://img.alicdn.com/tfs/TB1DElqhKbviK0jSZFNXXaApXXa-520-280.jpg_q90_.webp" alt="Third slide">
-                                        </div>
-                                    </div>
-                                    <!-- 轮播（Carousel）导航 -->
-                                    <a class="carousel-control left" href="#myCarousel" role="button"  data-slide="prev"></span>
-                                    </a>
-                                    <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="content-left-bottom">
-                                <div class="mall-top"></div>
-                                <div class="mall-bottom">
-                                    <img src="image/背景2.jpg">
-                                </div>
-                            </div>
+            <div class="row search-result" style="display: none;">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="panel panel-default">
+                        <div class="panel-body" id="result">
+                            搜索结果
                         </div>
-                        <div class="content-right"><img src="image/信纸.jpg"></div>
                     </div>
-
-                    <div class="service-bottom"><img src="image/背景2.jpg"></div>
                 </div>
-
-                <div class="main-right"><img src="image/信纸.jpg"></div>
-
+                <div class="col-md-1"></div>
             </div>
         </div>
 
+        <div class="bars2">
+            <a href="#" class="theme">主题市场</a>
+            <a href="#" class="theme">天猫</a>
+            <a href="#" class="theme">聚划算</a>
+            <a href="#" class="theme">天猫超市</a>
+            <span style="color: #fff;">|</span>
+            <a href="#" class="theme">淘抢购</a>
+            <a href="#" class="theme">电器城</a>
+            <a href="#" class="theme">司法拍卖</a>
+            <a href="#" class="theme">淘宝心选</a>
+            <a href="#" class="theme">兴农扶贫</a>
+            <span style="color: #fff;">|</span>
+            <a href="#" class="theme">飞猪旅行</a>
+            <a href="#" class="theme">智能生活</a>
+            <a href="#" class="theme">苏宁易购</a>
+            <a href="#" class="theme">黑科技</a>
+        </div>
+
+        <div class="main-right"><img src="image/信纸.jpg"></div>
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+        
         <script>
+            //$('navigation-bars1').height(15);
+            //$('.navbar').css({"height": "97px"});
+            //$('.navigation-bars1').css({"background-color":"yellow"});
+
+            //属性选择器 [属性="值"]
             $('.btn[type="submit"]').click(function(e) {
                 e.preventDefault();
+                //在显示器看到对象内容
+                //var Content = console.log($("input[type='text']").val());
+
+                if(document.getElementById("content1").value.length > 0){
+                        $('.search-result').show();
+                        //innerHTML获取div里面的值                      获取input里的值
+                        document.getElementById("result").innerHTML = document.getElementById("content1").value;
+                }else{
+                        $('.search-result').hide();
+                }
             });
 
         </script>
