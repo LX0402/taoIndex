@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    
+
 }
 
 .navbar{
@@ -143,7 +143,7 @@
     white-space: nowrap;
 }
 
-.service-left>ul>li>a,span,#chevron{
+.service-left a, .service-left span, .service-left #chevron{
     font-size: 12px;
     color: #666;
 }
@@ -188,6 +188,11 @@
     height: 8px;
     background-color: #ff5000;
     border: 1px solid #ff5000;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image:  none;
+    width: 5%;
 }
 
 .content-left-bottom{
