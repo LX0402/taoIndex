@@ -238,6 +238,7 @@
 
 .mall-center{
     border: 1.5px solid #ff1648;
+    background-color: #ff1648;
 }
 
 .mall-bottom{
@@ -258,9 +259,22 @@
     margin-left: 5px;
 }
 
-.content-right>img{
+.content-right>.top{
     width: 129px;
-    height: 510px;
+    height: 264px;
+}
+
+.content-right>h5{
+    width: 129px;
+    height: 14px;
+    font-size: 12px;
+    color: #a1a1a1;
+    margin: 5px 0 0 0;
+}
+
+.content-right>.bottom{
+    width: 129px;
+    height: 225px;
 }
 
 .main-right{
