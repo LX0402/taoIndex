@@ -290,11 +290,55 @@
 }
 
 .service-bottom{
-    border: 1px solid #ff5000;
     height: 110px;
 }
 
-.service-bottom>img{
-    height: 98px;
-    width: 802px;
+.service-bottom-main{
+    padding: 20px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.service-bottom-left{
+    width: 150px;
+    display: inline-block;
+}
+
+.service-bottom-left img{
+    height: 50px;
+    width: 150px;
+    display: block;
+}
+
+.service-bottom-left span , .service-bottom-right p{
+    color: #999;
+    
+}
+
+.service-bottom-right{
+    height: 80px;
+    width: 590px;
+    float: right;
+}
+
+.service-bottom-right img{
+    padding: 5px;
+}
+
+.service-bottom-right .main{
+    float: right;
+    width: 453px;
+}
+
+.service-bottom-right h4{
+    font-size: 16px;
+    margin: 10px 0px 5px 0px;
+}
+
+.service-bottom-right p{
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 14px;
+    display: block;
 }
