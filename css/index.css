@@ -296,7 +296,6 @@
 .service-bottom-main{
     padding: 20px;
     height: 100px;
-    overflow: hidden;
 }
 
 .service-bottom-left{
@@ -319,6 +318,7 @@
     height: 80px;
     width: 590px;
     float: right;
+    overflow: hidden;
 }
 
 .service-bottom-right img{

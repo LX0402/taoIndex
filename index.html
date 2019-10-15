@@ -386,31 +386,45 @@
             //移动速度
             var speed = 1;
 			//停留时间
-			var delay = 5000;
+			var delay = 1000;
 			//移动高度
 			var height = 100;
 			var time;
-			window.onload = function(){
-				var area = document.getElementById("roll");
-				area.innerHTML += area.innerHTML;
-				function scroll(){
-					if(area.scrollTop % height == 0){
-						clearInterval(time);
-						setTimeout(start,delay);
-					}else{
-						area.scrollTop++;
-						if(area.scrollTop >= area.scrollHeight/2){
-							area.scrollTop = 0;
-						}
-					}
-					
-				}
-				function start(){
-					time = setInterval(scroll,speed);
-					area.scrollTop++;
-				}
-				setTimeout(start,delay);
-			}
+            var area = document.getElementById("roll");// $('#roll')
+            area.innerHTML += area.innerHTML;
+            function scroll(){
+                if(area.scrollTop % height == 0){
+                    clearInterval(time);
+                    setTimeout(start,delay);
+                }else{
+                    area.scrollTop++;
+                    if(area.scrollTop >= area.scrollHeight/2){
+                        area.scrollTop = 0;
+                    }
+                }
+                
+            }
+            function start(){
+                time = setInterval(scroll,speed);
+                area.scrollTop++;
+            }
+            setTimeout(start,delay);
+/*
+            var area2 = $('#roll');
+            var height2 = area2.height();
+            var item2 = 3;
+            var delay2 = 1000;
+            setInterval(async function(){
+                for (var i = 0; i < item2 - 1; i++) {
+                    area2.scrollTop(area2.scrollTop()+height2);
+                    await setTimeout(null, delay2);
+                }
+                area2.scrollTop(0);
+            }, delay2);
+
+*/
+
+
         </script>
     </body>
 </html>
