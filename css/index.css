@@ -312,13 +312,14 @@
 
 .service-bottom-left span , .service-bottom-right p{
     color: #999;
-    
+
 }
 
 .service-bottom-right{
     height: 80px;
     width: 590px;
     float: right;
+    overflow: hidden;
 }
 
 .service-bottom-right img{
@@ -327,6 +328,7 @@
 
 .service-bottom-right .main{
     float: right;
+    height: 80px;
     width: 453px;
 }
 
