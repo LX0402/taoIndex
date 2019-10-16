@@ -336,17 +336,14 @@
                                     <span>让你的生活更有趣</span>
                                 </p>
                             </div>
-
+            
                             <div class="service-bottom-right" id="roll">
                                 <img src="https://img.alicdn.com/mt/TB1qv5geRWD3KVjSZFsXXcqkpXa-640-398.jpg_120x120q90.jpg_.webp">
                                 <div class="main">   
                                     <h4>扦插花卉不生根？教你3分钟学“高压”</h4>
-                                    <p>喜欢养花的人越来越多，想必很多花友经常会去花店或者花卉市场买一些绿植盆栽
-                                        养在家里，当然随着养花的经验越来越足，很多花友也会通过播种繁殖、扦插繁殖
-                                        、分株繁殖和高压繁殖来获得大量花卉盆栽。
+                                    <p>喜欢养花的人越来越多，想必很多花友经常会去花店或者花卉市场买一些绿植盆栽养在家里，当然随着养花的经验越来越足，很多花友也会通过播种繁殖、扦插繁殖、分株繁殖和高压繁殖来获得大量花卉盆栽。
                                     </p>
                                 </div>
-                            
                                 <img src="https://img.alicdn.com/mt/TB1TgefeLWG3KVjSZFgXXbTspXa-790-552.jpg_120x120q90.jpg_.webp">
                                 <div class="main">   
                                     <h4>夏日降温偏方，北欧风清新卫浴这般造</h4>
@@ -354,7 +351,7 @@
                                         上演一出以无胜多的神奇逆袭，将清新感贯穿于细节之中，从此解禁夏日凉爽，get全新的降温时光。
                                     </p>
                                 </div>
-                            
+            
                                 <img src="https://img.alicdn.com/mt/TB1AlqoeGWs3KVjSZFxXXaWUXXa-640-360.jpg_120x120q90.jpg_.webp">
                                 <div class="main">   
                                     <h4>糖酥饼真香警告</h4>
@@ -363,7 +360,6 @@
                                     </p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -386,43 +382,32 @@
             //移动速度
             var speed = 1;
 			//停留时间
-			var delay = 1000;
+			var delay = 5000;
 			//移动高度
 			var height = 100;
 			var time;
-            var area = document.getElementById("roll");// $('#roll')
-            area.innerHTML += area.innerHTML;
-            function scroll(){
-                if(area.scrollTop % height == 0){
-                    clearInterval(time);
-                    setTimeout(start,delay);
-                }else{
-                    area.scrollTop++;
-                    if(area.scrollTop >= area.scrollHeight/2){
-                        area.scrollTop = 0;
-                    }
-                }
-                
-            }
-            function start(){
-                time = setInterval(scroll,speed);
-                area.scrollTop++;
-            }
-            setTimeout(start,delay);
-/*
-            var area2 = $('#roll');
-            var height2 = area2.height();
-            var item2 = 3;
-            var delay2 = 1000;
-            setInterval(async function(){
-                for (var i = 0; i < item2 - 1; i++) {
-                    area2.scrollTop(area2.scrollTop()+height2);
-                    await setTimeout(null, delay2);
-                }
-                area2.scrollTop(0);
-            }, delay2);
+			window.onload = function(){
+				var area = document.getElementById("roll");
+				area.innerHTML += area.innerHTML;
+				function scroll(){
+					if(area.scrollTop % height == 0){
+						clearInterval(time);
+						setTimeout(start,delay);
+					}else{
+						area.scrollTop++;
+						if(area.scrollTop >= area.scrollHeight/2){
+							area.scrollTop = 0;
+						}
+					}
+					
+				}
+				function start(){
+					time = setInterval(scroll,speed);
+					area.scrollTop++;
+				}
+				setTimeout(start,delay);
+			}
 
-*/
 
 
         </script>

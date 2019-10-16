@@ -306,7 +306,7 @@
 .service-bottom-left img{
     height: 50px;
     width: 150px;
-    display: block;
+    display: inline-block;
 }
 
 .service-bottom-left span , .service-bottom-right p{
@@ -322,7 +322,9 @@
 }
 
 .service-bottom-right img{
-    padding: 5px;
+    width: 120px;
+    height: 85px;
+    margin: 5px;
 }
 
 .service-bottom-right .main{
@@ -338,7 +340,9 @@
 .service-bottom-right p{
     line-height: 20px;
     height: 40px;
-    overflow: hidden;
     font-size: 14px;
-    display: block;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
