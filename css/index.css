@@ -311,7 +311,7 @@
 
 .service-bottom-left span , .service-bottom-right p{
     color: #999;
-    
+
 }
 
 .service-bottom-right{
@@ -329,6 +329,7 @@
 
 .service-bottom-right .main{
     float: right;
+    height: 80px;
     width: 453px;
 }
 
