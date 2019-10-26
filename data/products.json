@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Product 1",
+        "price": 1599,
+        "img": "image/product1.webp",
+        "description": "This is a great product",
+        "createDate": "2019-10-23"
+    }, {
+        "name": "Product 2",
+        "price": 12,
+        "img": "image/product2.webp",
+        "description": "This is a great product",
+        "createDate": "2019-10-23"
+    }, {
+        "name": "Product 4",
+        "price": 299,
+        "img": "image/product4.webp",
+        "description": "This is a great product",
+        "createDate": "2019-10-23"
+    }, {
+        "name": "Product 3",
+        "price": 199,
+        "img": "image/product3.webp",
+        "description": "This is a great product",
+        "createDate": "2019-10-23"
+    }
+]

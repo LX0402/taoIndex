@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="lib/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/bootstrap-3.4.1-dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/test.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="container ">
+            <div class="jumbotron">
+                <h1></h1>
+                <p></p>
+            </div>
+            <div class="product-list">
+                <div class="panel panel-default product-template">
+                    <div class="panel-body">
+                        Panel
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+        <script src="lib/bootstrap-3.4.1-dist/js/bootstrap.min.js">
+        </script>
+        <script>
+            (function() {
+                $('.jumbotron h1').text('Hello, World!')
+                $('.jumbotron p:first').text('If you see this text, it means jQuery is loaded.')
+
+                let productTemplate = $('.product-template').clone()
+
+                $.get({
+                   url: 'data/products.json',
+                   dataType: "json"
+                }).done((result) => {
+                    result.forEach((item) => {
+                        $('.panel').append()
+                    })
+                }).fail((error) => {
+                    console.log('Request Failed:' + JSON.stringify(error))
+                })
+
+            })();
+        </script>
+    </body>
+</html>
