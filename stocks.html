@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div class="result">
+			<div class="repo-template">
+				<p>
+					<span class="repo-name"></span>
+					<span class="link"><a href="#" target="_blank">View on github</a></span>
+				</p>
+			</div>
+
+			<ul class="category-template">
+				<li class="category" style="display: inline;" style="display: inline;">啊手动阀   </li>
+				<li style="display: inline;">/</li>
+				<li class="category" style="display: inline;"></li>
+				<li style="display: inline;">/</li>
+				<li class="category" style="display: inline;"></li>
+				<li style="display: inline;">></li>
+			</ul>
+
+		</div>
+
+		<script src="lib/jquery/jquery-3.4.1.min.js"></script>
+		<script>
+
+			let repoTemplate = $('.repo-template')
+
+			$.ajax({
+				url: 'https://api.github.com/users/thinkthink09/repos'
+			}).done(function(data) {
+				console.log(data)
+
+				$.each(data, function(index, item) {
+					let repoElement = repoTemplate.clone()
+					repoElement.find('.repo-name').text(item.name)
+					repoElement.find('.link a').attr('href', item.html_url)
+					$('.result').append(repoElement)
+				})
+
+				repoTemplate.hide()
+
+			}).fail(function(error) {
+				console.log(error)
+			});
+
+			let companies = ["Apple",
+			"Amazon",
+			"The Walt Disney Company",
+			"Facebook",
+			"Alphabet",
+			"General Electric",
+			"Microsoft",
+			"NVIDIA",
+			"Netflix"]
+
+			let categoryTemplate = $('.category-template')
+
+			// $.each(companies, function(index, item) {
+			// 	let companyElement = template.clone()
+			// 	companyElement.find('.number').text(index)
+			// 	companyElement.find('.company-name').text(item)
+			// 	$('.result').append(companyElement)
+			// })
+
+			// 不行companies.each()
+			setTimeout(function() {
+				for (let i=0; i < companies.length; i++) {
+					let line = categoryTemplate.clone()
+					line.find('.category').each(function(index, li) {
+						$(li).text(companies[i])
+						i++
+					})
+					$('.result').append(line)
+				}
+
+				categoryTemplate.hide()
+			} , 3000)
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+
+$('选择器').find('选择器') => 在某个element底下用选择器寻找
+$('选择器').append(一些元素) => 在某个element底下append其他元素
+$('选择器').text(字符串) => 把某个element的html内容改成这串字符串
+$.each(list, function(序号, list里面的每个item) {...function内容...}) => 对list里边每个item执行function, 只能在有jQuery的时候用
+$('选择器').show() => 把某个element的display变成block 对于已经显示的element无效
+$('选择器').hide() => 把某个element的display变成none
